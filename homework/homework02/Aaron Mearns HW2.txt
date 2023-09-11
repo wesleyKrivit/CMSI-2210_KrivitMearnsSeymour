@@ -1,0 +1,40 @@
+What is a "computer system"?
+	A computer system is a collection of integrated electronics that can perform all the necessary functions of a computer: reading, storing, manipulating and outputting data.
+What are some of the parts of a computer system?
+	Most computer systems have a processor to execute commands, some form of memory storage to contain data, and various subprocessors that handle the input and output components of the device.
+What is the difference between a compiled language and an intepreted language?
+	The output of a compiled language is a machine-executable binary file, while the output of an interpreted language is a file (or set of files) that must be read by a separate interpreter to run.
+Is "C" a compiled language?
+	Yes
+Who invented the "C" language?
+	Dennis Ritchie
+How long has "C" been in use?
+	Since 1972
+Is a compiler a translator?
+	Due to the interpretive work involved in most compilers (optimizing code for space or speed, removing redundancies, etc.), I would argue that compilers are translating programs.
+Is an assembler a translator?
+	Most assemblers simply combine and convert assembly code into its machine language form - since very little true transformation is involved in this process, I believe that it would be wrong to call them true translators.
+What is the command to list out the contents of a directory on a mac terminal window?
+	ls
+What does the "C" function atof() do?
+	atof() receives a C string (i.e. a null-terminated char array) and attempts to convert said string into a double (i.e. a floating-point number). If it suceeds, the converted number is returned; otherwise, it returns 0.0.
+What are the bottom two layers of a computer system? Give a brief desciption of each.
+	The lowest layer of a computer system is composed of the physical circuits and gates that manipulate the computer's data; the 'microcode' that directs these circuits based on the hardware instructions given to it comprise the second-lowest layer of a computer.
+What are the three "steps" of the Von Neumann Architecture?
+	Fetch instruction -> decode instruction -> execute instruction
+What is the purpose of an ALU?
+	The ALU's function is to perform the instructions - usually various mathematical operations - given by its processor's control unit.
+What is a "register"?
+	A register is a physical memory location on a processor, separate from any other memory in the computer system. Because a processor can access a register faster than it can access main memory, most processors include multiple registers designed to store data temporalily during calculations, and many specialized computer systems include registers dedicated to that system's unique feature set - a processor controlling a scanner, for instance, might have a register dedicated to initializing and uninitializing the scanning hardware.
+What is one difference between "Application software" and "System software"?
+	Application software is usually written with higher-level languages with garbage collection and other 'quality of life' features, while system software typically uses languages that allow for closer access to hardware features.
+Is the phrase cmp rdi, rsi machine language?
+	This is an assembly language instruction, which corresponds to a machine language instruction's value(s) but is not itself machine code.
+How many buses are included in the system bus?
+	Three: the data bus, the address bus, and the control bus.
+What is the decimal value of 10010111(binary)?
+	1 + 2 + 4 + 16 + 128 = 151
+What is the decimal value of 11111111(binary)?
+	2^8 - 1 = 255
+What is the largest unsigned integer value that will fit into 16 bits?
+	2^16 - 1 = 65535
