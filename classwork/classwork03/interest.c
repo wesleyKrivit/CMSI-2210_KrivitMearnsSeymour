@@ -63,4 +63,13 @@ int main(void){
 	} while (!isFloat(input, input_len));
 	
 	double interest = atof(input);
+	
+	const char* ordinals[] = {"first", "second", "third"};
+	
+	const int num_compounds = 3;
+	for (int month = 0; month < num_compounds - 1; month++){
+		double balance = principal * pow(1 + (interest / 100), month);
+		printf("After the %s month: %.2f\n", ordinals[month], balance);
+	}
+	return 0;
 }
