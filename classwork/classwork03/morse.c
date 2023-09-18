@@ -67,7 +67,6 @@ void convertToMorse(const char* input) {
 }
 
 int main(int argc, char* argv[]) {
-   int index = 0;
     if (argc != 2) {
         printf("Usage: %s \"word or phrase\"\n", argv[0]);
         return 1;
