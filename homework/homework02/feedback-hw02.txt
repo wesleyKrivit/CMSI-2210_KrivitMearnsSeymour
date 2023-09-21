@@ -1,0 +1,45 @@
+
+
+Evaluation Criteria ~ homework02
+CMSI 2210 Section 03 Fall 2023
+=================================
+
+BOOK PROBLEMS
+   Question 01    1/1 pt.
+   Question 02    1/1 pt.
+   Question 03    1/1 pt.
+   Question 04    1/1 pt.
+   Question 05    1/1 pt.
+   Question 06    1/1 pt.
+   Question 07    1/1 pt.
+   Question 08    1/1 pt.
+   Question 09    1/1 pt.
+   Question 10    1/1 pt.
+   Question 11    1/1 pt.
+   Question 12    1/1 pt.
+   Question 13    1/1 pt.
+   Question 14    1/1 pt.
+   Question 15    1/1 pt.
+   Question 16    1/1 pt.
+   Question 17    1/1 pt.
+   Question 18    1/1 pt.
+   Question 19    1/1 pt.
+   Question 20    1/1 pt.
+
+Total possible points 20
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 20/20 which is 100% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+On question 8, you make a good case for an assembler NOT being a form of a
+translator, so you get full marks.  However, an assembler IS actually a
+translator that takes the mnemonics of assembly code and translates them
+into the machine code that can cause the processor to execute those
+instructions.
+
+Otherwise, nice job!
