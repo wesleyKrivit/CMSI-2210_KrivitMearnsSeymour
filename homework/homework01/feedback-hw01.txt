@@ -1,0 +1,76 @@
+
+
+Evaluation Criteria ~ homework01
+CMSI 2210 Section 01 Fall 2023
+=================================
+
+SAYHELLO.C
+   file exists          1/1 pt.
+   file compiles        1/1 pt.
+   program runs         1/1 pt.
+   prompts user         1/1 pt.
+   reads input          1/1 pt.
+   displays hello name  1/1 pt.
+SAYHELLO.ASM
+   file exists          1/1 pt.
+   file assembles       1/1 pt.
+   programruns          1/1 pt.
+GENERAL
+   code style           1/1 pt.
+
+Total possible points 10
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 10/10 which is 100% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+Nice work here, looks like everything is working for you.
+
+VERY impressive work handling the extra newline in the "fgets()" call!  I'm
+   glad to see you looking things up and learning how to handle such things.
+
+Also glad to see you expanding on the "nasm" code to add lines before and
+   after the ouput!  You are thinking critically about the task.  One thing
+   to consider [which you may not have seen yet] is that since the message
+   is defined as a series of bytes, you can actually put the newlines from
+   your "blank" message on the front of the "message" message.  That would
+   look like:
+
+      message: db 10, 10, "Hello, world!", 10, 10, 0
+
+   You can also use hexadecimal values:
+
+      message: db 0x0A, 0x0A, "Hello, world!", 0x0A, 0x0A, 0x00
+
+Another thing to remember: when you push something onto the stack, you'll
+   need to adjust the stack pointer after the function call.  In your code,
+   you have:
+
+      _main:   push        blank
+               call        _printf
+               push        message
+               call        _printf
+
+   but you technically should have:
+
+      _main:   push        blank
+               call        _printf
+               add         esp, 4      ; adjust the stack pointer
+               push        message
+               call        _printf
+               add         esp, 4      ; adjust the stack pointer
+
+   You 'get away with it' here because "printf()" with only a text message
+   just uses the top of the stack as the starting address, no matter what
+   is there, then the operating system cleans that up for you on exit.  You
+   may not be so lucky in future programs though!
+
+Finally, try to make sure your assembly code mnemonics are all aligned in the
+   same column so your code looks neat.  Get into the habit of "crafting"
+   your code to make it as professional as possible.  Just sayin'...... :)
+
+Off to a great start!
