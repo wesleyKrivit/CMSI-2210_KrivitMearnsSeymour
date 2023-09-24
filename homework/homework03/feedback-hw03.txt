@@ -1,0 +1,121 @@
+
+
+Evaluation Criteria ~ homework03
+CMSI 2210 Section 02 Fall 2023
+=================================
+CONVERSIONS
+
+Problems "C-level"
+=================
+   Question 01      1/1 pt.
+   Question 02      1/1 pt.
+   Question 03      0/1 pt.   nope!
+   Question 04      1/1 pt.
+   Question 05      1/1 pt.
+   Question 06      1/1 pt.
+   Question 07      1/1 pt.
+   Question 08      1/1 pt.
+   Question 09      0/1 pt.   nope!
+   Question 10      1/1 pt.
+   Question 11      1/1 pt.
+   Question 12      1/1 pt.
+   Question 13      1/1 pt.
+   Question 14      1/1 pt.
+   Question 15      1/1 pt.
+   Question 16      1/1 pt.
+   Question 17      1/1 pt.
+   Question 18      1/1 pt.
+   Question 19      0/1 pt.   nope!
+   Question 20      0/1 pt.   nope!
+   Question 21      1/1 pt.
+   Question 22      0/1 pt.   nope!
+
+
+Problems "B-level"
+=================
+[renumber so only the actual questions are numbered]
+   Question  01     1/1 pt.
+   Question  02     1/1 pt.
+   Question  03     1/1 pt.
+   Question  04     0/1 pt.   nope!
+   Question  05     0/1 pt.   nope!
+   Question  06     1/1 pt.
+   Question  07     1/1 pt.
+   Question  08     0/1 pt.   nope!
+   Question  09     1/1 pt.
+   Question  10     1/1 pt.
+   Question  11     0/1 pt.   nope!
+   Question  12     0/1 pt.   nope!
+   Question  13     1/1 pt.
+   Question  14     1/1 pt.
+   Question  15     1/1 pt.
+   Question  16     1/1 pt.
+
+
+Problems "A-level"
+=================
+[renumber so only the actual questions are numbered]
+   Question  01     1/1 pt.
+   Question  02     1/1 pt.
+   Question  03     0/1 pt.   nope!
+   Question  04     1/1 pt.
+   Question  05     0/1 pt.   nope!
+   Question  06     0/1 pt.   nope!
+   Question  07     0/1 pt.   nope!
+   Question  08   for fun only!
+
+Total possible points 45
+
+========================================================
+TOTAL EARNED POINTS:
+   You earned 17/22 for the "C-level"
+   you earned 11/16 for the "B-level"
+   You earned  3/ 7 for the "A-level"
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+on "C-level" #3, should be a negative value
+
+on "C-level" #9, off by one
+
+on "C-level" #19, your math is off a bit
+
+on "C-level" #20, re-visit the definition of 'saturated'; this isn't it.
+
+on "C-level" #22, re-visit the definition of 'overflow'; both are positive
+but what is the result?
+
+on "B-level" #4 and #8, check 'overflow' definition.
+
+on "B-level" #5, modulated arithmetic ~ what do you do with the carry?
+
+on "B-level" #11 and #12, double-check your two's complement process
+
+on "B-level" #
+
+on "A-level" #2, you have the right answer for this one in #3 so I'm going
+to swap them.
+
+on "A-level" #3, the problem is asking for the largest negative number that
+is just BELOW zero, like between 0 and -1.
+
+on "A-level" #5, there are two number bases here; try calculating
+2^90 as a decimal number, then multiply by -5.125, then put that result into
+the converter on the web page at:
+      https://www.h-schmidt.net/FloatConverter/IEEE754.html
+
+on "A-level" #6 and #7, do the same as on #5.
+
+========================================================
+FIRST PASS OUTCOME:
+
+Currently, because you didn't get all correct in any section you have a fail
+for the assignment.
+
+Make your corrections and re-submit to your repo by Thursday, September 28th.
+You'll get full credit for the highest section's value that has 100% correct
+answers.
+
+Currently you got all correct on all three segments so you have an "A" for
+the assignment
