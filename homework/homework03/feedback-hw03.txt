@@ -9,13 +9,13 @@ Problems "C-level"
 =================
    Question 01      1/1 pt.
    Question 02      1/1 pt.
-   Question 03      0/1 pt.   nope!
+   Question 03      0/1 pt.   Corrected
    Question 04      1/1 pt.
    Question 05      1/1 pt.
    Question 06      1/1 pt.
    Question 07      1/1 pt.
    Question 08      1/1 pt.
-   Question 09      0/1 pt.   nope!
+   Question 09      0/1 pt.   Corrected
    Question 10      1/1 pt.
    Question 11      1/1 pt.
    Question 12      1/1 pt.
@@ -25,10 +25,10 @@ Problems "C-level"
    Question 16      1/1 pt.
    Question 17      1/1 pt.
    Question 18      1/1 pt.
-   Question 19      0/1 pt.   nope!
-   Question 20      0/1 pt.   nope!
+   Question 19      0/1 pt.   Corrected
+   Question 20      0/1 pt.   Corrected
    Question 21      1/1 pt.
-   Question 22      0/1 pt.   nope!
+   Question 22      0/1 pt.   Corrected
 
 
 Problems "B-level"
@@ -37,15 +37,15 @@ Problems "B-level"
    Question  01     1/1 pt.
    Question  02     1/1 pt.
    Question  03     1/1 pt.
-   Question  04     0/1 pt.   nope!
+   Question  04     0/1 pt.   Corrected
    Question  05     0/1 pt.   nope!
    Question  06     1/1 pt.
    Question  07     1/1 pt.
-   Question  08     0/1 pt.   nope!
+   Question  08     0/1 pt.   Corrected
    Question  09     1/1 pt.
    Question  10     1/1 pt.
-   Question  11     0/1 pt.   nope!
-   Question  12     0/1 pt.   nope!
+   Question  11     0/1 pt.   Corrected
+   Question  12     0/1 pt.   Corrected
    Question  13     1/1 pt.
    Question  14     1/1 pt.
    Question  15     1/1 pt.
@@ -59,9 +59,9 @@ Problems "A-level"
    Question  02     1/1 pt.
    Question  03     0/1 pt.   nope!
    Question  04     1/1 pt.
-   Question  05     0/1 pt.   nope!
-   Question  06     0/1 pt.   nope!
-   Question  07     0/1 pt.   nope!
+   Question  05     0/1 pt.   Corrected
+   Question  06     0/1 pt.   Corrected
+   Question  07     0/1 pt.   Corrected
    Question  08   for fun only!
 
 Total possible points 45
@@ -117,5 +117,26 @@ Make your corrections and re-submit to your repo by Thursday, September 28th.
 You'll get full credit for the highest section's value that has 100% correct
 answers.
 
-Currently you got all correct on all three segments so you have an "A" for
-the assignment
+========================================================
+SECOND PASS OUTCOME:
+
+All "C" level problems corrected.
+
+Still a problem on the "B" levels:
+#5: should be 0xAEFA not 0xAC9A
+
+Still a problem on the "A" level problems:
+#4: should be 0x8000 0001
+
+Since the level in which all the problems are now correct is the "C" level,
+you earned a "C" on the assignment.
+
+========================================================
+FINAL PASS OUTCOME:
+
+Combining all levels into one assignment.
+
+Total of 45 problems.
+
+You earned 43/45 which is 95.56% which is an A.
+
