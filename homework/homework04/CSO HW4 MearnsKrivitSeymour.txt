@@ -1,0 +1,122 @@
+Homework 4
+
+1:
+Nandless:
+X := A OR (B AND C)
+Y := NOT (A AND C)
+
+Nanded:
+X := (A NAND A) NAND (B NAND C)
+Y := A NAND C
+
+2:
+((A1 XOR B1) AND (NOT A1 OR 0)) OR ((A0 XOR B0) AND (A0 OR 0))
+
+3:
+a. R32 AND 0xAAAAAAAA
+b. R32 OR  0x00000007
+c. R32 AND 0x00000007
+d. R32 AND 0xFFFFFFFF
+e. R32 XOR 0xC0000000
+f. R32 AND 0xFFFFFFF8
+
+4: 
+        JMP   start  ;
+limit:  0xFF         ;
+start:  LOAD  0x0    ;
+loop_s: WRITE 0x8    ;
+        SUB   limit  ;
+        JZ    end    ;
+        ADD   limit  ;
+        ADD   0x1    ;
+        JMP   loop_s ;
+end:    JMP   end    ;
+
+5:
+C0000002
+000000FF
+00000000
+30000008
+500000FF
+D0000009
+400000FF
+40000001
+C0000003
+C0000009
+
+6:
+             JMP      start       ;
+num_1:       0                    ;
+num_2:       0                    ;
+divisor:     0                    ;
+start:       READ     0x100       ;
+             STORE    num_1       ;
+             READ     0x100       ;
+             STORE    num_2       ;
+             SUB      num_1       ;
+             BLZ      two_lesser  ;
+             LOAD     num_1       ;
+             JMP      comp_gcd    ;
+two_lesser:  LOAD     num_2       ;
+comp_gcd:    STORE    divisor     ;
+             LOAD     num_1       ;
+             MOD      divisor     ;
+             JZ       test_second ;
+             JMP      dec_divisor ;
+test_second: LOAD     num_2       ;
+             MOD      divisor     ;
+             JZ       success     ;
+             JMP      dec_divisor ;
+dec_divisor: LOAD     divisor     ;
+             SUB      0x1         ;
+             JZ       success     ;
+             JMP      comp_gcd    ;
+success:     LOAD     divisor     ;
+             WRITE    0x200       ;
+
+
+7:
+        JMP      start    ;
+memloc: 0x30AA            ;
+temp_1: 0x30AB            ;
+temp_2: 0x30AC            ;
+start:  STORE    temp_1   ;
+        LOAD     {memloc} ;
+        STORE    temp_2   ;
+        LOAD     temp_1   ;
+        STORE    memloc   ;
+        LOAD     temp_2   ;
+end:    JMP      end      ;
+
+
+8:
+         JMP       start    ;
+address: 0x837BBE1          ;
+start:   JGZ       address  ;
+         JZ        address  ;
+end:     JMP       end      ;
+
+9:
+a:
+The values of the two registers have been swapped
+
+b:
+We can clearly show how the effect works by observing the three possible bit patterns the instructions could operate on:
+
+r8 == r9 == 0:
+ r8 = r8 xor r9 = 0
+ r9 = r9 xor r8 = 0
+ r8 = r8 xor r9 = 0
+
+r8 == r9 == 1:
+ r8 = r8 xor r9 = 0
+ r9 = r9 xor r8 = 1
+ r8 = r8 xor r9 = 1
+
+r8 != r9:
+ r8 = r8 xor r9 = 1 (always)
+ r9 = r9 xor r8 = not r9 (aka r8's original value)
+ r8 = r8 xor r9 = not r8 (aka r9's original value)
+
+Since each bit operation is unaffected by any others, this property holds true for 32-bit registers just as much as it does for single bits.
+
