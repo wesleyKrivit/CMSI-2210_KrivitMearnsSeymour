@@ -1,0 +1,30 @@
+        JMP   start    ; declaring variable spaces
+num1:   0
+num2:   0
+numCur: 0
+length: 10
+index:  0
+
+start:  LOAD  num1    ; initial printing of values
+        WRITE 255
+        LOAD  num2
+        WRITE 255
+
+loop:   LOAD  num2    ; adding to get new current number
+        ADD   num1
+        WRITE 255
+        STORE numCur   ; storing new current number
+
+        LOAD  num2     ;making num 1 the old num2, basically shifting the values down
+        STORE num1
+
+        LOAD  mnumCur  ; making the current number the new num 2
+        STORE num2
+
+        LOAD  index    ;incrementing the count for number of loops and exiting if greater
+        ADD   1
+        STORE index
+        SUB length
+        JLZ loop
+
+end:    JMP end
