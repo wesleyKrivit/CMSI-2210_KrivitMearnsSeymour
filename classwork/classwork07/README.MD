@@ -1,1 +1,1 @@
-GLUTEN SUX
+Classwork 07 folder
