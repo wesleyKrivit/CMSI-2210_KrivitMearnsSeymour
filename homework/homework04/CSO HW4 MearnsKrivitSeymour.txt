@@ -3,7 +3,7 @@ Homework 4
 1:
 Nandless:
 X := A OR (B AND C)
-Y := NOT (A AND C)
+Y := NOT (A) OR C
 
 Nanded:
 X := (A NAND A) NAND (B NAND C)
