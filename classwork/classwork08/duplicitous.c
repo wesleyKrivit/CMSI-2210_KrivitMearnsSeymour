@@ -40,20 +40,20 @@
  * helper method to output instructions for the user for next time
  */
 void instructions() {
-   printf( "\n\n   This is a file copier program.\n" );
-   printf( "   It copies a block of text multiple times to an output file.\n" );
-   printf( "   The input file name should be given as an argument.\n" );
-   printf( "   If one is not provided, you will be asked for it.\n" );
-   printf( "   You must also enter a number of times to copy the text block.\n" );
-   printf( "   The number must be an integer value 1 through 10 inclusive.\n" );
-   printf( "   If a number is not provided, you will be asked for it.\n" );
-   printf( "\n\n" );
+    printf( "\n\n   This is a file copier program.\n" );
+    printf( "   It copies a block of text multiple times to an output file.\n" );
+    printf( "   The input file name should be given as an argument.\n" );
+    printf( "   If one is not provided, you will be asked for it.\n" );
+    printf( "   You must also enter a number of times to copy the text block.\n" );
+    printf( "   The number must be an integer value 1 through 10 inclusive.\n" );
+    printf( "   If a number is not provided, you will be asked for it.\n" );
+    printf( "\n\n" );
 }
 
 void appendNewline(char* str){
-	if (str[strlen(str) - 1] != '\n'){
-		strcat(str, "\n");
-	}
+   if (str[strlen(str) - 1] != '\n'){
+      strcat(str, "\n");
+   }
 }
 
 const size_t MAX_ARRAY_LENGTH = 1000;
@@ -125,43 +125,40 @@ int main( int argc, char * argv[] ) {
    *  write them to the output file
    */
    if (num_lines > 0){
-		for (int i = 0; i < copyCount; i++){
-			int line_count = 0;
-			if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
-			while (line_count < num_lines) {
-				appendNewline(line);
-				fwrite(line, sizeof(char), strlen(line), out);
-				if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
-				line_count++;
-			}
-			fseek(in, first_line_end, SEEK_SET);
-		}   
+      for (int i = 0; i < copyCount; i++){
+         int line_count = 0;
+         if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
+         while (line_count < num_lines) {
+            appendNewline(line);
+            fwrite(line, sizeof(char), strlen(line), out);
+            if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
+               line_count++;
+            }
+            fseek(in, first_line_end, SEEK_SET);
+         }   
    }
    else{
-		size_t total_lines = 0;
-		while (fgets(line, MAX_ARRAY_LENGTH, in) != NULL){
-			total_lines++;
-		}
-		
-		num_lines *= -1;
-		if (total_lines < num_lines){
-			num_lines = total_lines;
-		}
-		for (int i = 0; i < copyCount; i++){
-			fseek(in, first_line_end, SEEK_SET);
-			int line_count = 0;
-			//printf("%d: ", (total_lines - num_lines));
-			while (line_count < total_lines) {
-				fgets(line, MAX_ARRAY_LENGTH, in);
-				appendNewline(line);
-				if (line_count >= total_lines - num_lines){
-					//printf("%d ", line_count);
-					fwrite(line, sizeof(char), strlen(line), out);
-				}
-				line_count++;
-			}
-			//printf("\n");
-		}   
+      size_t total_lines = 0;
+      while (fgets(line, MAX_ARRAY_LENGTH, in) != NULL){
+         total_lines++;
+      }
+	   
+      num_lines *= -1;
+      if (total_lines < num_lines){
+         num_lines = total_lines;
+      }
+      for (int i = 0; i < copyCount; i++){
+         fseek(in, first_line_end, SEEK_SET);
+         int line_count = 0;
+         while (line_count < total_lines) {
+            fgets(line, MAX_ARRAY_LENGTH, in);
+            appendNewline(line);
+            if (line_count >= total_lines - num_lines){
+               fwrite(line, sizeof(char), strlen(line), out);
+            }
+            line_count++;
+         }
+      }   
    }
    
   /*
