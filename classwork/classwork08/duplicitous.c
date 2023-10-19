@@ -50,6 +50,12 @@ void instructions() {
    printf( "\n\n" );
 }
 
+void appendNewline(char* str){
+	if (str[strlen(str) - 1] != '\n'){
+		strcat(str, "\n");
+	}
+}
+
 const size_t MAX_ARRAY_LENGTH = 1000;
 const int MIN_COPIES = 1;
 const int MAX_COPIES = 10;
@@ -89,45 +95,75 @@ int main( int argc, char * argv[] ) {
   /*
    * open the input file and check open error
    */
-    FILE* in = fopen(filename, "r");
-    if (!in){
-        printf("   Error opening %s, the input file!\n", filename);
-        return 1;
-    }
+   FILE* in = fopen(filename, "r");
+   if (!in){
+       printf("   Error opening %s, the input file!\n", filename);
+       return 1;
+   }
   /*
    * read the first line of the input file to get the readline count
    */
    char line[MAX_ARRAY_LENGTH];
    fgets(line, MAX_ARRAY_LENGTH, in);
    long long first_line_end = strlen(line) + 1; // skip the newline
-    int num_lines = atoi(line);
-    if (num_lines == 0){
-        printf("Invalid line count found!\n");
-        return 2;
-    }
-    printf("File %s will copy %d lines...\n", filename, num_lines);
+   int num_lines = atoi(line);
+   if (num_lines == 0){
+       printf("Invalid line count found!\n");
+       return 2;
+   }
+   printf("File %s will copy %d lines...\n", filename, num_lines);
   /*
    * open the output file and check open error
    */
-    FILE* out = fopen("output.txt", "w");
-    if (!out){
-        printf("   Error opening the output file!\n");
-        return 3;
-    }
+   FILE* out = fopen("output.txt", "w");
+   if (!out){
+       printf("   Error opening the output file!\n");
+       return 3;
+   }
   /*
    * read that many lines from the input file and
    *  write them to the output file
    */
-   for (int i = 0; i < copyCount; i++){
-       int line_count = 0;
-       if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
-        while (line_count < num_lines) {
-            fwrite(line, sizeof(char), strlen(line), out);
-            if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
-            line_count++;
-        }
-        fseek(in, first_line_end, SEEK_SET);
+   if (num_lines > 0){
+		for (int i = 0; i < copyCount; i++){
+			int line_count = 0;
+			if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
+			while (line_count < num_lines) {
+				appendNewline(line);
+				fwrite(line, sizeof(char), strlen(line), out);
+				if (fgets(line, MAX_ARRAY_LENGTH, in) == NULL) break;
+				line_count++;
+			}
+			fseek(in, first_line_end, SEEK_SET);
+		}   
    }
+   else{
+		size_t total_lines = 0;
+		while (fgets(line, MAX_ARRAY_LENGTH, in) != NULL){
+			total_lines++;
+		}
+		
+		num_lines *= -1;
+		if (total_lines < num_lines){
+			num_lines = total_lines;
+		}
+		for (int i = 0; i < copyCount; i++){
+			fseek(in, first_line_end, SEEK_SET);
+			int line_count = 0;
+			//printf("%d: ", (total_lines - num_lines));
+			while (line_count < total_lines) {
+				fgets(line, MAX_ARRAY_LENGTH, in);
+				appendNewline(line);
+				if (line_count >= total_lines - num_lines){
+					//printf("%d ", line_count);
+					fwrite(line, sizeof(char), strlen(line), out);
+				}
+				line_count++;
+			}
+			//printf("\n");
+		}   
+   }
+   
   /*
    * clean up after yourself
    */
