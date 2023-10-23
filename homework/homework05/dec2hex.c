@@ -41,11 +41,12 @@ int main(int argc, char** argv){
 		return 3;
 	}
 	else{
+		printf("0x");
 		char* bits = calloc(sizeof(char), NUMBER_OF_BITS[use_64_bit] + 1);
-		for (int i = NUMBER_OF_BITS[use_64_bit] - 1; i >= 0; i--){
-			short bit = decimal % 2;
-			decimal = decimal >> 1;
-			bits[i] = bit + '0';
+		for (int i = NUMBER_OF_DIGITS[use_64_bit] - 1; i >= 0; i--){
+			short bit = decimal % HEX_BASE;
+			decimal = decimal >> BITS_IN_NYBBLE;
+			bits[i] = bit + ((bit <= 9) ? '0' : ('A' - 0x0A));
 		}
 		printf("%s\n", bits);
 	}
