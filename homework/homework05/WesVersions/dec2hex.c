@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]){-
     printf("function start \n");
-    int decNum = atoi(argv[0]);
+    int decNum = atoi(argv[1]);
     
     //the byteSize is 32 by default, only the optional 64 byte command will change it to 64
     int byteSize = 32;

@@ -3,7 +3,7 @@
 
 int main(char *argv[]) {
     printf("function start \n");
-    int decNum = atoi(argv[0]);
+    int decNum = atoi(argv[1]);
     
     //creates memory space for a char array that holds the binary string
     char* binNum = malloc (32 *sizeof(char));
