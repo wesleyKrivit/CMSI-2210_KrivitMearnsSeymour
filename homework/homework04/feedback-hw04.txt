@@ -1,0 +1,64 @@
+
+
+Evaluation Criteria ~ homework04
+CMSI 2210 Section 02 Fall 2023
+=================================
+
+LOGIC DESIGN
+   Logic Question 1a         10 pts.
+   Logic Question 1b          5 pts.
+   Logic Question 2          10 pts.
+
+REGISTER OPERATIONS
+   Register clear even        2 pts.
+   Register set last 3        2 pts.
+   Reg./8 remainder           2 pts.
+   Reg. set to -1             2 pts.
+   Reg. invert 2 MSBs         2 pts.
+   Register computation       2 pts.
+
+STANLEY/PENGUIN ASSEMBLY
+   Q4 - program 1a            9 pts.
+   Q5 - program 1b           11 pts.
+   Q6 - GCD prog.            11 pts.
+   Q7 - swap frag             5 pts.
+   Q8 - jmp to addr           5 pts.
+
+REGISTER INVESTIGATION
+   Q9a - high level expl.     5 pts.
+   Q9b - Why?                 5 pts.
+
+
+Total possible points        90 points
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 88.0/ 90.0 which is 97.78% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+On #2, nice work with the ASCII art for the circuit!!  Impressive....
+
+On #4, your logic is a bit out of order.  You need to add one to the output
+   value BEFORE you SUBTRACT the value of 'limit' from the accumulator, and
+   the value of limit should be 256, not 255.  Can you see why?
+
+On #5, correct translation of a [slightly] incorrect program code.
+
+On #6, you need an 'end:' label to stop the program.
+
+Good job!
+
+========================================================
+SEMESTER SCORE SO FAR:
+
+   homework01 ~ 100.00% of  5 points =  5.00 points
+   homework02 ~ 100.00% of  5 points =  5.00 points
+   homework03 ~  95.56% of  5 points =  4.78 points
+   homework04 ~  97.78% of  5 points =  4.89 points
+                                total: 19.67 out of 20.0 = 98.35%
+                                which is an A-plus
+
+Keep up the good work!
