@@ -1,7 +1,7 @@
 
 
 Evaluation Criteria ~ homework05
-CMSI 2210 Section 01 Fall 2021
+CMSI 2210 Section 02 Fall 2021
 =================================
 
 dec2bin
@@ -35,17 +35,17 @@ TOTAL EARNED POINTS:
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
 
-
+See in-line comment above.
 
 ========================================================
 SEMESTER SCORE SO FAR:
 
    homework01 ~ 100.00% of  5 points =  5.00 points
    homework02 ~ 100.00% of  5 points =  5.00 points
-   homework03 ~ 100.00% of  5 points =  5.00 points
-   homework04 ~ 100.00% of  5 points =  5.00 points
-   homework05 ~ 100.00% of 10 points = 10.00 points
-                                total: 30.00 out of 30.00 = 100.00%
-                                which is an A-plus
+   homework03 ~  95.56% of  5 points =  4.78 points
+   homework04 ~  97.78% of  5 points =  4.89 points
+   homework05 ~  90.00% of 10 points =  9.00 points
+                                total: 28.67 out of 30.0 = 95.57%
+                                which is an A
 
 Your code looks VERY nice, you two obviously care about the craft....

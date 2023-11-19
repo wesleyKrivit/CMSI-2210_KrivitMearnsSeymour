@@ -1,0 +1,90 @@
+. 
+"running tests on dec2bin"     
+. 
+"running tests on dec2hex"     
+Less arguments passed than expected!
+0x00000005
+0x0001E240
+0x0000FFFF
+0x3A400000
+0x40001234
+0x0000000000000005
+0x000000000001E240
+Invalid number of bits (defaulting to 32)
+0x0000FFFF
+0x000000003A400000
+0x40001234
+. 
+"running tests on timesTables" 
+Less arguments passed than expected!
+25 2
+Your times table, as requested:
+  x | 2:  3:  4:  5: 
+----|----------------
+ 2: |  4   6   8  10 
+ 3: |  6   9  12  15 
+ 4: |  8  12  16  20 
+ 5: | 10  15  20  25 
+100 3
+Your times table, as requested:
+   x |  2:   3:   4:   5:   6:   7:   8:   9:  10: 
+-----|---------------------------------------------
+  2: |   4    6    8   10   12   14   16   18   20 
+  3: |   6    9   12   15   18   21   24   27   30 
+  4: |   8   12   16   20   24   28   32   36   40 
+  5: |  10   15   20   25   30   35   40   45   50 
+  6: |  12   18   24   30   36   42   48   54   60 
+  7: |  14   21   28   35   42   49   56   63   70 
+  8: |  16   24   32   40   48   56   64   72   80 
+  9: |  18   27   36   45   54   63   72   81   90 
+ 10: |  20   30   40   50   60   70   80   90  100 
+144 3
+Your times table, as requested:
+   x |  2:   3:   4:   5:   6:   7:   8:   9:  10:  11:  12: 
+-----|-------------------------------------------------------
+  2: |   4    6    8   10   12   14   16   18   20   22   24 
+  3: |   6    9   12   15   18   21   24   27   30   33   36 
+  4: |   8   12   16   20   24   28   32   36   40   44   48 
+  5: |  10   15   20   25   30   35   40   45   50   55   60 
+  6: |  12   18   24   30   36   42   48   54   60   66   72 
+  7: |  14   21   28   35   42   49   56   63   70   77   84 
+  8: |  16   24   32   40   48   56   64   72   80   88   96 
+  9: |  18   27   36   45   54   63   72   81   90   99  108 
+ 10: |  20   30   40   50   60   70   80   90  100  110  120 
+ 11: |  22   33   44   55   66   77   88   99  110  121  132 
+ 12: |  24   36   48   60   72   84   96  108  120  132  144 
+169 3
+Your times table, as requested:
+   x |  2:   3:   4:   5:   6:   7:   8:   9:  10:  11:  12:  13: 
+-----|------------------------------------------------------------
+  2: |   4    6    8   10   12   14   16   18   20   22   24   26 
+  3: |   6    9   12   15   18   21   24   27   30   33   36   39 
+  4: |   8   12   16   20   24   28   32   36   40   44   48   52 
+  5: |  10   15   20   25   30   35   40   45   50   55   60   65 
+  6: |  12   18   24   30   36   42   48   54   60   66   72   78 
+  7: |  14   21   28   35   42   49   56   63   70   77   84   91 
+  8: |  16   24   32   40   48   56   64   72   80   88   96  104 
+  9: |  18   27   36   45   54   63   72   81   90   99  108  117 
+ 10: |  20   30   40   50   60   70   80   90  100  110  120  130 
+ 11: |  22   33   44   55   66   77   88   99  110  121  132  143 
+ 12: |  24   36   48   60   72   84   96  108  120  132  144  156 
+ 13: |  26   39   52   65   78   91  104  117  130  143  156  169 
+. 
+"running test on holdit"       
+Congratulations on becoming one of the Chosen!
+Before you may begin your ascension,
+please participate in a simple assessment of your vessel's capabilities.
+Press ENTER when you are ready.
+Take a deep breath, deeper than any you've ever taken in your physical life.
+Press ENTER as soon as you have.
+Hold your breath for as long as you possibly can.
+Once your vessel has failed you, press ENTER immediately.
+It seems that you managed to hold your breath for 5.217 seconds.
+...
+Our judgement has lapsed.
+Your vessel is ill equipped for the new world.
+This session has ended - do not contact us again.
+. 
+"running test on wordcount"    
+Insufficient arguments presented! Service refused!
+Scanning document... It seems your file has 394 words!
