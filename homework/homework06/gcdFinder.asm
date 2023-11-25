@@ -43,7 +43,7 @@ cmp_second:
             div     ebx    
             pop     eax
             cmp     edx, 0
-            je      div_found       ; finish the function is the second number is also divisible by the candidate
+            je      div_found       ; finish the function if the second number is also divisible by the candidate
             jmp     continue        ; keep trying otherwise
 div_found:
             mov     eax, ebx
