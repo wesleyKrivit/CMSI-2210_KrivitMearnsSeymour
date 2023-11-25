@@ -47,9 +47,10 @@ cmp_second:
             jmp     continue        ; keep trying otherwise
 div_found:
             mov     eax, ebx
-            pop     ebp
-            ret
+            jmp     done
             
 zero_handle:
             mov     eax, 0          ; set the return value to an error state
-            ret
+done:
+            pop     ebp             ; standard function end thing
+            ret                     ; get outta here
