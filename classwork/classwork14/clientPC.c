@@ -32,6 +32,7 @@
 
    #define IP_ADDRESS  "127.0.0.1"
    #define TELNET_PORT 6789
+   #define END_CODE    "000"
 
     // not very good at validating ips
     // but good enough to differentiate between a probably-ip and a probably-not-ip
@@ -186,7 +187,7 @@
 
                     Sleep(1000);  
                     
-                    if(!strcmp(sendbuf, "000")){
+                    if(!strcmp(sendbuf, END_CODE)){
                         break;
                     }
                 }
