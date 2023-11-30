@@ -169,7 +169,7 @@
        //----------------------
        // Send an initial buffer
               
-       printf("Welcome to the client interface!\nEnter messages to send them to the server.\nType \"000\" to quit.\n");
+       printf("Welcome to the client interface!\nEnter messages to send them to the server.\nType \"%s\" to quit.\n", END_CODE);
        
        while(1){
            if (fgets(sendbuf, sizeof(sendbuf), stdin)){
