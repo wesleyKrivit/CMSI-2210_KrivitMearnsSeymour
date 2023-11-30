@@ -22,15 +22,15 @@
 
    int main(int argc, char *argv[])
    {
-		uint32_t port = TELNET_PORT;
-		if (argc > 1){
-			port = strtoul(argv[1], NULL, 10);
-			if (!port){
-				printf("Invalid port number given!\nQuitting now...\n");
-				return 1;
-			}
-		}
-	   
+        uint32_t port = TELNET_PORT;
+        if (argc > 1){
+            port = strtoul(argv[1], NULL, 10);
+            if (!port){
+                printf("Invalid port number given!\nQuitting now...\n");
+                return 1;
+            }
+        }
+       
        WSADATA wsa;
        SOCKET s, new_socket;
        struct sockaddr_in server, client;
@@ -89,14 +89,14 @@
        send(new_socket, message, strlen(message), 0);
        printf( "OK, message sent to client.\n");
        while(1){
-		   printf("Waiting for a message...\n");
-		   recv(new_socket, recvbuf, 512, 0);
-		   printf( "Client sent \"%s\" with size %d\n", recvbuf, strlen(recvbuf) + 1 );
-		   if(!strcmp(recvbuf, "000") || !strlen(recvbuf)){
-				break;
-		   }
-	   }
-	   printf("Client terminated connection. Press enter to quit.\n");
+           printf("Waiting for a message...\n");
+           recv(new_socket, recvbuf, 512, 0);
+           printf( "Client sent \"%s\" with size %d\n", recvbuf, strlen(recvbuf) + 1 );
+           if(!strcmp(recvbuf, "000") || !strlen(recvbuf)){
+                break;
+           }
+       }
+       printf("Client terminated connection. Press enter to quit.\n");
 
        getchar();
 
