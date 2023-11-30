@@ -19,6 +19,7 @@
    #pragma comment(lib,"ws2_32.lib") //Winsock Library
 
    #define TELNET_PORT 6789
+   #define END_CODE    "000"
 
    int main(int argc, char *argv[])
    {
@@ -92,7 +93,7 @@
            printf("Waiting for a message...\n");
            recv(new_socket, recvbuf, 512, 0);
            printf( "Client sent \"%s\" with size %d\n", recvbuf, strlen(recvbuf) + 1 );
-           if(!strcmp(recvbuf, "000") || !strlen(recvbuf)){
+           if(!strcmp(recvbuf, END_CODE) || !strlen(recvbuf)){
                 break;
            }
        }
