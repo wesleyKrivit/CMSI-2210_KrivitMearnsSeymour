@@ -1,3 +1,6 @@
+nasm -f win32 findGCD.nasm
+gcc -m32 findGCD.obj -o findGCD.exe
+
             global    _main
             extern    _printf
             extern    _gets
