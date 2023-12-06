@@ -1,3 +1,6 @@
+gcc makeNBO.c -o makeNBO.exe
+
+	
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
