@@ -1,5 +1,5 @@
-nasm -f win32 paritygen.nasm
-gcc -m32 paritygen.obj -o paritygen.exe
+; TO BUILD (ON WINDOWS)
+; nasm -fwin32 paritygen.asm
 
             global  _paritygen
             default rel
