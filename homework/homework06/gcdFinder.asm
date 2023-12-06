@@ -1,5 +1,6 @@
-nasm -f win32 gcdFinder.nasm
-gcc -m32 gcdFinder.obj -o gcdFinder.exe
+; TO BUILD (ON WINDOWS)
+; nasm -fwin32 gcdFinder.asm
+; gcc gcdFinder.obj gcdFinder.c -std=c99 -o gcdFinder.exe
 
             global  _gcdFinder
             default rel
