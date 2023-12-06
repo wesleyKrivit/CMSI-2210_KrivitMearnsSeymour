@@ -1,5 +1,5 @@
-gcc paritygen.c -o paritygen.exe
-
+// TO BUILD (ON WINDOWS)
+// gcc paritygen.obj paritygen.c -std=c99 -o paritygen.exe (paritygen.asm must have been assembled first!)
 
 #include <stdio.h>
 #include <stdlib.h>
