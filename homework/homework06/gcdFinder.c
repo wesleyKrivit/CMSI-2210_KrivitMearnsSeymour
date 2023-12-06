@@ -1,5 +1,7 @@
 // TO BUILD (ON WINDOWS)
-// gcc gcdFinder.obj gcdFinder.c -std=c99 -o gcdFinder.exe (gcdFinder.asm must have been assembled first!)
+// compile and link with: gcc gcdFinder.obj gcdFinder.c -std=c99 -o gcdFinder.exe (gcdFinder.asm must have been assembled first!)
+// just compile with: gcc -c gcdFinder.c -std=c99
+// run with: gcdFinder.exe
 
 #include <stdio.h>
 #include <stdlib.h>
