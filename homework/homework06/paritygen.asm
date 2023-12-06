@@ -1,3 +1,6 @@
+nasm -f win32 paritygen.nasm
+gcc -m32 paritygen.obj -o paritygen.exe
+
             global  _paritygen
             default rel
             
