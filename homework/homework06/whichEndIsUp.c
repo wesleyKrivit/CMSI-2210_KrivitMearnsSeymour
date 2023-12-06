@@ -1,3 +1,6 @@
+gcc whichEndIsUp.c -o whichEndIsUp.exe
+
+
 #include <stdio.h>
 #include <inttypes.h>
 
