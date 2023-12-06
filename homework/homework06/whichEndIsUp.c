@@ -1,6 +1,7 @@
 // TO BUILD (ON WINDOWS)
-// gcc whichEndIsUp.c -std=c99 -o whichEndIsUp.exe
-
+// compile and link with: gcc whichEndIsUp.c -std=c99 -o whichEndIsUp.exe
+// just compile with: gcc -c whichEndIsUp.c -std=c99
+// run with: whichEndIsUp.exe
 #include <stdio.h>
 #include <inttypes.h>
 
