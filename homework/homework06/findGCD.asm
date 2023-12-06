@@ -1,6 +1,7 @@
 ; TO BUILD (ON WINDOWS)
-; nasm -fwin32 findGCD.asm
-; gcc findGCD.obj -o findGCD.exe
+; assemble with: nasm -fwin32 findGCD.asm
+; link with: gcc findGCD.obj -o findGCD.exe
+; run with: findGCD.exe
 
             global    _main
             extern    _printf
