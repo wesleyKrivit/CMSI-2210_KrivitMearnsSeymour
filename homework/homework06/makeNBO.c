@@ -1,5 +1,7 @@
 // TO BUILD (ON WINDOWS)
-// gcc makeNBO.obj makeNBO.c -std=c99 -o makeNBO.exe (makeNBO.asm must have been assembled first!)
+// compile and link with: gcc makeNBO.obj makeNBO.c -std=c99 -o makeNBO.exe (makeNBO.asm must have been assembled first!)
+// just compile with: gcc -c makeNBO.c -std=c99
+// run with: makeNBO.exe
 	
 #include <stdio.h>
 #include <stdlib.h>
