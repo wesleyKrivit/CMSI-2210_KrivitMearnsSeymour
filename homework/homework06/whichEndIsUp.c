@@ -1,5 +1,5 @@
-gcc whichEndIsUp.c -o whichEndIsUp.exe
-
+// TO BUILD (ON WINDOWS)
+// gcc whichEndIsUp.c -std=c99 -o whichEndIsUp.exe
 
 #include <stdio.h>
 #include <inttypes.h>
