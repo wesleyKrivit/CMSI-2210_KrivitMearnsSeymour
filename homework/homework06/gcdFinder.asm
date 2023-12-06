@@ -1,3 +1,6 @@
+nasm -f win32 gcdFinder.nasm
+gcc -m32 gcdFinder.obj -o gcdFinder.exe
+
             global  _gcdFinder
             default rel
         
