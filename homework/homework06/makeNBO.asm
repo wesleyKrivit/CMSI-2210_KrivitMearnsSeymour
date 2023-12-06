@@ -1,5 +1,6 @@
-nasm -f win32 makeNBO.nasm
-gcc -m32 makeNBO.obj -o makeNBO.exe
+; TO BUILD (ON WINDOWS)
+; nasm -fwin32 makeNBO.nasm
+; gcc makeNBO.obj -o makeNBO.exe
 
             global    _main    
             extern    _printf
