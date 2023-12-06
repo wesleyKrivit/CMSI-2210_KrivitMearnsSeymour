@@ -1,7 +1,7 @@
 ; TO BUILD (ON WINDOWS)
 ; to assemble: nasm -fwin32 gcdFinder.asm
 ; to link: gcc gcdFinder.obj gcdFinder.c -std=c99 -o gcdFinder.exe
-;to run: gcdFinder.exe
+; to run: gcdFinder.exe
 
             global  _gcdFinder
             default rel
