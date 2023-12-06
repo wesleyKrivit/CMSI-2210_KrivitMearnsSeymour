@@ -1,3 +1,6 @@
+gcc paritygen.c -o paritygen.exe
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
