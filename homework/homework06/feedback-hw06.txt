@@ -1,0 +1,77 @@
+
+
+Evaluation Criteria ~ homework06
+CMSI 2210 Section all Fall 2023
+=================================
+
+FINDGCD.NASM
+   nasm file assembles  [5 pts.]
+   nasm runs            [5 pts.]
+   output correct       [3 pts.]
+GCDFINDER
+   nasm file assembles  [5 pts.]
+   gcdFinder.c compiles [5 pts.]
+   link both files OK   [5 pts.]
+   nasm returns value   [5 pts.]
+   output correct       [3 pts.]
+PARITYGEN
+   nasm file assembles  [5 pts.]
+   nasm runs            [5 pts.]
+   output correct       [2 pts.]
+WHICHENDISUP
+   compiles no errors   [5 pts.]
+   runs no errors       [5 pts.]
+MAKENBOC.C
+   compiles no errors   [5 pts.]
+   uses previous func.  [5 pts.]
+   tester compiles      [0 pts.]
+   tester runs          [0 pts.]
+   output correct       [3 pts.]
+MAKENBO.NASM
+   nasm file assembles  [5 pts.]
+   link all files OK    [5 pts.]
+   calls "C" function   [5 pts.]
+   output correct       [3 pts.]
+
+Total possible points 100
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 89.00/100.00 which is 89% which is a B-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+problem 1 findGCD.nasm: perfect
+
+problem 2 findGCDfunc.nasm & gcdFinder.c: perfect
+
+problem 3 paritygen.nasm: close, but no cigar.  The output is backwards to
+   what the problem is asking for.
+
+problem 4 whichEndIsUp.c: perfect again!
+
+problem 5 makeNBOC.c & makeNBOCtest.c: not quite here.  This is supposed to
+   be one "C" file for the function, then a second "C" file to test it out
+   BEFORE you include it into the nasm program.  You only have the function
+   file.  sorry.
+
+problem 6 makeNBOC.c & makeNBON.nasm: perfect again!
+
+========================================================
+SEMESTER HOMEWORK TOTALS:
+
+   homework01 ~ 100.00% of  5 points =  5.00 points
+   homework02 ~ 100.00% of  5 points =  5.00 points
+   homework03 ~  95.56% of  5 points =  4.78 points
+   homework04 ~  97.78% of  5 points =  4.89 points
+   homework05 ~  90.00% of 10 points =  9.00 points
+   homework06 ~  89.00% of 15 points = 13.35 points
+                       semester total: 42.02 out of 45.00 = 93.38%
+                             which is an A
+
+You three have done great work this semester and you obviously 'get it' with
+this material.  Thanks for a great class and great questions!  I look forward
+to seeing you in future classes.  Have a wonderful holiday!
+
